@@ -6,7 +6,7 @@ const options = document.querySelectorAll(".options");
       option.addEventListener("click", function () {
         const playerInput = this.value;
 
-        const cOptions = ["rock", "paper", "scissors"];
+        const cOptions = ["Rock", "Paper", "Scissors"];
 	alert(cOptions[0]);
         const compInput = cOptions[Math.floor(Math.random() * 3)];
         
