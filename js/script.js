@@ -7,6 +7,7 @@ const options = document.querySelectorAll(".options");
         const playerInput = this.value;
 
         const cOptions = ["rock", "paper", "scissors"];
+	alert(cOptions[0]);
         const compInput = cOptions[Math.floor(Math.random() * 3)];
         
         updateMoves(playerInput, compInput);
