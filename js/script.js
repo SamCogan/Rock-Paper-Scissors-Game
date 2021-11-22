@@ -19,9 +19,9 @@ const options = document.querySelectorAll(".options");
       });
     });
 
-    function updateMoves(playerInput, compInput){
-      document.getElementById("p-move").src = `../img/${playerInput}.png`;
-      document.getElementById("c-move").src = `../img/${compInput}.png`;
+    function updateMoves(playerInput, compInput){      
+      document.getElementById("p-move").src = 'img/'+playerInput+'.png';
+      document.getElementById("c-move").src = 'img/'+compInput+'.png';    
     }
 
 
