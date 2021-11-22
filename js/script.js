@@ -6,7 +6,7 @@ const options = document.querySelectorAll(".options");
       option.addEventListener("click", function () {
         const playerInput = this.value;
 
-        const cOptions = ["Rock", "Paper", "Scissors"];
+        const cOptions = ["rock", "paper", "scissors"];
         const compInput = cOptions[Math.floor(Math.random() * 3)];
         
         updateMoves(playerInput, compInput);
@@ -20,8 +20,8 @@ const options = document.querySelectorAll(".options");
     });
 
     function updateMoves(playerInput, compInput){
-      document.getElementById("p-move").src = `./img/${playerInput}.png`;
-      document.getElementById("c-move").src = `./img/${compInput}.png`;
+      document.getElementById("p-move").src = "/img/"+playerInput+".png";
+      document.getElementById("c-move").src = "/img/"+compInput+".png";
     }
 
 
